@@ -1,0 +1,261 @@
+
+
+%%
+%% The following code sets up the document formatting
+%%
+
+%this assumes that res_yy.sty is in some path
+\documentstyle[hyperref, margin, line]{res_yy}
+
+\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\voffset}{-0.55in}
+\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+
+\renewcommand{\namefont}{\LARGE\emph}
+
+
+
+%%
+%% The following code defines some macros for terms which have raised font
+%% (ie 4\fourth would result 4th with the 'th' raised (superscripted)
+%%
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+
+
+%%
+%% starting the actual document
+%%
+
+\begin{document}
+
+%the name in big fonts at the top of resume
+%this is left aligned
+\name{Oren Mazor}
+
+%this is right aligned
+\address{\#2 87 Stirling Street, Ottawa, Canada, K1Y 1P9}
+\address{(613) 255 - 5093 \ttfamily $<$oren.mazor at gmail dot com$>$}
+
+\begin{resume}
+
+%%
+%% This section of code is inelegant, but I'm too lazy to fix it
+%%
+
+\section{\textsc{Summary}}
+A creative Software Developer with a strong cross-technology skill-set. Interested in building expertise in application development for mobile devices, as well as working with modern web technologies as a back-end developer.
+
+\section{\textsc{Education}}
+
+\textit{Bachelor of Computer Science}, Class of 2006. \\
+Minor in Business \\
+Carleton University, Ottawa, Canada \\
+Thesis: \textit{''Practical Mitigation of Malicious Network Resource Consumers''} \\
+Supervised by Dr. Anil Somayaji. 
+
+%%
+%% the meat of the resume starts now
+%%
+
+\begin{formatb}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Research Topics}}
+
+Network Security, Bioinformatics, Usability, and Ubiquitous Computing.
+
+\section{\textsc{Qualifications}}
+
+\emph{Programming Languages}: C, C$++$, C\#, Objective-C.
+
+\emph{Scripting:} PHP, Perl, Python, JQuery.
+
+\emph{Data Management}: PostgreSQL, MySQL, XML, JSON, RDF.
+
+\emph{Toolkits}: WiX, STL, Cocoa, Google App Engine, Django.
+
+\emph{Tools}: Visual Studio 2003-2008, X-Code, VIM, Eclipse, Dreamweaver.
+
+\emph{Software Engineering}: Agile/XP Development, Design Patterns.
+
+\emph{Technical Interests}: Coding Standards, Frameworks and Middleware, Dynamically Typed Languages.
+
+\section{\textsc{Professional Experience}}
+
+\employer{\textbf{VDOlife}}
+\title{Web Software Developer}
+\location{Ottawa Canada}
+\dates{May 2009 - Present}
+\begin{position}
+\begin{itemize}
+\item Designed features for the VDO product line using javascript, CFML, php, and python.
+\item Took on the head architect role for at least one prototype product and produced a working sample on short notice.
+\item Administrated production Redhat and Ubuntu servers responsible for web and media streaming to the public.
+\end{itemize}
+\end{position}
+
+\employer{\textbf{OneChip Photonics}}
+\title{Software Developer}
+\location{Ottawa Canada}
+\dates{May 2009 - Present}
+\begin{position}
+\begin{itemize}
+\item Duties included advanced understanding of C\# coding standards, problem identification and solution, deployment strategies for libraries and applications (internal and customer facing). Also responsible for training test automation and electrical engineers in basic software design principles.
+\item Responsible for the creation and maintenance of several test automation software for photooptic devices.
+\item Designed an internally used extensive API for test automation libraries, test stations, GPIB device drivers, and a LINQ based ORM for manipulating test data results.
+\end{itemize}
+\end{position}
+
+\employer{\textbf{Self Employed}}
+\title{Web Software Developer}
+\location{Ottawa Canada}
+\dates{January 2009 - July 2009}
+\begin{position}
+\begin{itemize}
+\item Took on several projects using a variety of tools, such as Joomla, Wordpress, and django/python.
+\item Provided Joomla training, design, and maintenance to several teams and developers.
+\end{itemize}
+\end{position}
+
+\employer{\textbf{Macadamian Technologies}}
+\title{Software Developer}
+\location{Ottawa Canada}
+\dates{June 2006 - January 2009}
+\begin{position}
+\begin{itemize}
+\item Worked in a team to design and deliver major features of embedded VOIP desktop and software phones, including Emergency dialing/routing, UI re-design, SMS messaging, and designing feature provisioning using SOAP.
+\item Developed plug-ins for a Microsoft Office tool, as well as developing and maintaining a variety of custom Windows installers using the WiX framework.
+\item Took on customer facing project leadership tasks in project administration, status reporting, workload division, and quality assurance communication in a six person globally distributed project.
+\item Advanced personal understanding of low level embedded systems written in C/C++, such as writing applications for the EFI Framework and VxWorks.
+\item Represented Macadamian in professional and recruiting events, as well as co-editing the corporate blog, and developing the competition monitoring, solution submission, and marking web application for the CS Games 2007 Programming competition (written in PHP with an open source AJAX toolkit).
+\item Created and ran internal training discussion groups (Barcamps) on topics ranging from iPhone/Android SDKs to Semantic Web technologies.
+\end{itemize}
+\end{position}
+
+\employer{\textbf{International Datacasting Corporation}}
+\title{Software Developer}
+\location{Ottawa Canada}
+\dates{June 2004 - June 2006}
+\begin{position}
+\begin{itemize}
+\item Implemented a customized ''heartbeat'' monitoring tool for a realtime satellite broadcasting headend network using C\# and a variety of win32 libraries.
+\item Developed an in-house used Wireshark (C++/GTK) visual plugin for debugging of the control protocol, previously done via notepad and a hex dump.
+\item Responsible for system maintenance of RedHat Linux and Windows enterprise platforms, and aiding in a variety of projects, from a video transmission tool written in VB, a real-time AJAX scheduling tool written in PHP, and in-depth work with a c/perl head-end satellite receiver management web application.
+\end{itemize}
+\end{position}
+
+%%
+%% We use the same formatting for projects as for work experience
+%% Shown below is the formatting used previously
+%%
+%%  \begin{formatb}
+%%    \employer{l}\title{r}\\
+%%    \location{l}\dates{r}\\
+%%    \body\\
+%%  \end{formatb}
+%%
+%% 
+%%  Note that \location is now being used for non-location information
+%%
+
+\section{\textsc{Volunteer Work}}
+\begin{formatb}
+	\employer{l}\title{r}\\
+	\location{l}\dates{r}\\
+	\body\\
+\end{formatb}
+
+\employer{\textbf{Carleton University}}
+\title{Carleton University Senate Senator }
+\location{Ottawa Canada}
+\dates{June 30, 2005 - June 30, 2006}
+\begin{position}
+Senator representing the constituency of Science. Responsible for representing the needs of students as well as bringing student issues to the University Senate.
+\end{position}
+ 
+\employer{\textbf{Carleton Computer Science Society}}
+\title{IT Administrator}
+\location{Ottawa Canada}
+\dates{June 30, 2005 - June 30, 2006}
+\begin{position}
+Responsible for all technology oriented facets of the organization, including web/db server administration, networking infrastructure, and web cms administration and upgrading. This was done first through a homebuilt CMS tool, and later using Drupal.
+\end{position}
+
+\employer{\textbf{Carleton University}}
+\title{NUG Representative}
+\location{Ottawa Canada}
+\dates{September 30, 2004 - June 30, 2006}
+\begin{position}
+Student representative for constituency of Computer Science.
+\end{position}
+
+\employer{\textbf{Carleton Computer Science Society}}
+\title{Financial Officer}
+\location{Ottawa Canada}
+\dates{June 30, 2004 - June 30, 2005}
+\begin{position}
+Executive responsible for fiscal operations of the society. 
+\end{position}
+
+\employer{\textbf{Carleton Nexus Project}}
+\title{Assistant Server Administrator }
+\location{Ottawa Canada}
+\dates{November, 2003 - June, 2005}
+\begin{position}
+Setup and maintenance of SQL, mail, ldap, and webservers.
+\end{position}
+
+
+%%
+%% This section could also use more formatting, but looks ok, as is
+%%
+
+\section{\textsc{Personal Projects}}
+\begin{formatb}
+	\employer{l}\\
+	\body\\
+\end{formatb}
+
+\employer{\textbf{Kwidoo Audio Toolkit}}
+\begin{position}
+	A collection of audio processing and generation tools, written with Objective-c and Cocoa.
+\end{position}
+
+\employer{\textbf{Car PC}}
+\begin{position}
+	An intelligent processing module that will allow passive monitoring of car processes, as well as providing navigation aids and other in-car features, such as media.
+\end{position}
+
+\section{\textsc{Interests}}
+
+\begin{itemize}
+\item OS-X development; iPhone/Android; Maemo; Netbooks and UMPC development; Python; Data Structures; WebKit; Wireless Networking Architecture; 
+\item Geocaching; Automotive experimentation; Photography; Hiking; Ultimate disc;
+\end{itemize}
+
+%%
+%% Note that we're redefining the formatting
+%% We only have one row of information now, instead of two
+%%
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+
+\end{resume}
+\end{document}
