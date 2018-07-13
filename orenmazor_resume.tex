@@ -45,9 +45,6 @@
 %this is right aligned
 \address{\#9 Winnifred Avenue, Toronto, Ontario, Canada, M4M 2X2}
 \address{(613) 255 - 5093 \ttfamily $<$oren.mazor at protonmail com$>$}
-\address{https://www.github.com/orenmazor}
-\address{https://stackoverflow.com/users/118131/oren-mazor}
-\address{https://www.linkedin.com/in/orenmazor/}
 
 \begin{resume}
 
@@ -81,6 +78,11 @@ Supervised by Dr. Anil Somayaji.
 
 Network Security, Internet of Things, Usability, and Ubiquitous Computing.
 
+\section{\textsc{Online}}
+https://www.github.com/orenmazor\\
+https://stackoverflow.com/users/118131/oren-mazor\\
+https://www.linkedin.com/in/orenmazor/
+
 \section{\textsc{Qualifications}}
 
 \emph{Programming Languages}: C, C\#, Golang.
@@ -108,8 +110,8 @@ Network Security, Internet of Things, Usability, and Ubiquitous Computing.
 \item Introduced and managed CI/CD processes.
 \item Worked on dockerizing the codebase and migrated the infrastructure from an adhoc deploy supervisorctl/runit method to a dockerized cluster managed on Digital Ocean. Prototyped ECS/EKS orchestration alternatives.
 \item Implemented SRE principles to monitor security and performance on a variety of services provided to merchants and customers using modern industry stdards (statsd, newrelic, pagerduty).
-\item Worked on BFCM preparations for checkouts, a variety of strategies for improving throughput and managing complex business logic flows that are externals bound (e.g. stripe, avalara, ups, shopify).
-\item Implemented a backgrounding mechanism based on Python's RQ (with healthy ripping off of Resque/Sidekiq mechanisms, as RQ is relatively barebones). Added exponential and a variety of LRU backoff strategies to accomodate external resource throttles.
+\item Worked on preparing the infrastructure for the throughput required for BFCM. Implemented a variety of strategies for improving throughput and managing complex business logic flows that are externals bound through safe failover mechanisms (e.g. Stripe, Avalara, UPS, Shopify).
+\item Implemented a backgrounding mechanism based on Python's RQ, heavily inspired by Sidekiq/Resque and several other AMQP mechanisms. Added exponential and a variety of LRU backoff strategies to accomodate external resource throttles.
 \end{itemize}
 \end{position}
 
