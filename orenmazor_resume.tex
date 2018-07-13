@@ -45,6 +45,9 @@
 %this is right aligned
 \address{\#9 Winnifred Avenue, Toronto, Ontario, Canada, M4M 2X2}
 \address{(613) 255 - 5093 \ttfamily $<$oren.mazor at protonmail com$>$}
+\address{https://www.github.com/orenmazor}
+\address{https://stackoverflow.com/users/118131/oren-mazor}
+\address{https://www.linkedin.com/in/orenmazor/}
 
 \begin{resume}
 
@@ -92,18 +95,18 @@ Network Security, Internet of Things, Usability, and Ubiquitous Computing.
 
 \emph{Software Engineering}: Agile/XP Development, Design Patterns.
 
-\emph{Technical Interests}: Containers, Managing Big-Data Clusters, Frameworks and Middleware, Dynamically Typed Languages.
+\emph{Technical Interests}: Containers, Managing Big-Data Clusters, Frameworks and Middleware, Dynamically Typed Languages, Query Planners.
 
 \section{\textsc{Primary Professional Experience}}
 
 \employer{\textbf{RaCharge Payments}}
-\title{Senior Software Developer}
+\title{Senior Software Developer/DevOps Lead}
         \location{Santa Monica, California (Remote)}
 \dates{2016 - 2018}
 \begin{position}
 \begin{itemize}
 \item Introduced and managed CI/CD processes.
-\item Worked on dockerizing the codebase and migrated the infrastructure from an adhoc deploy supervisorctl/runit method to a dockerized cluster managed.
+\item Worked on dockerizing the codebase and migrated the infrastructure from an adhoc deploy supervisorctl/runit method to a dockerized cluster managed on Digital Ocean. Prototyped ECS/EKS orchestration alternatives.
 \item Implemented SRE principles to monitor security and performance on a variety of services provided to merchants and customers using modern industry stdards (statsd, newrelic, pagerduty).
 \item Worked on BFCM preparations for checkouts, a variety of strategies for improving throughput and managing complex business logic flows that are externals bound (e.g. stripe, avalara, ups, shopify).
 \item Implemented a backgrounding mechanism based on Python's RQ (with healthy ripping off of Resque/Sidekiq mechanisms, as RQ is relatively barebones). Added exponential and a variety of LRU backoff strategies to accomodate external resource throttles.
@@ -167,7 +170,7 @@ Network Security, Internet of Things, Usability, and Ubiquitous Computing.
 \begin{position}
 \begin{itemize}
 \item Duties included advanced understanding of C\# coding standards, problem identification and solution, deployment strategies for libraries and applications (internal and customer facing). Also responsible for training test automation and electrical engineers in basic software design principles.
-\item Responsible for the creation and maintenance of several test automation software for photooptic devices.
+\item Responsible for the creation and maintenance of several test automation software for photooptic devices, with a heavy focus on robotic validation of circuitry using computer vision algorithms.
 \item Designed an internally used extensive API for test automation libraries, test stations, GPIB device drivers, and a LINQ based ORM for manipulating test data results.
 \end{itemize}
 \end{position}
@@ -224,52 +227,52 @@ Network Security, Internet of Things, Usability, and Ubiquitous Computing.
 %%  Note that \location is now being used for non-location information
 %%
 
-\section{\textsc{Volunteer Work}}
-\begin{formatb}
-	\employer{l}\title{r}\\
-	\location{l}\dates{r}\\
-	\body\\
-\end{formatb}
-
-\employer{\textbf{Carleton University}}
-\title{Carleton University Senate Senator }
-\location{Ottawa Canada}
-\dates{June 30, 2005 - June 30, 2006}
-\begin{position}
-Senator representing the constituency of Science. Responsible for representing the needs of students as well as bringing student issues to the University Senate.
-\end{position}
- 
-\employer{\textbf{Carleton Computer Science Society}}
-\title{IT Administrator}
-\location{Ottawa Canada}
-\dates{June 30, 2005 - June 30, 2006}
-\begin{position}
-Responsible for all technology oriented facets of the organization, including web/db server administration, networking infrastructure, and web cms administration and upgrading. This was done first through a homebuilt CMS tool, and later using Drupal.
-\end{position}
-
-\employer{\textbf{Carleton University}}
-\title{NUG Representative}
-\location{Ottawa Canada}
-\dates{September 30, 2004 - June 30, 2006}
-\begin{position}
-Student representative for constituency of Computer Science.
-\end{position}
-
-\employer{\textbf{Carleton Computer Science Society}}
-\title{Financial Officer}
-\location{Ottawa Canada}
-\dates{June 30, 2004 - June 30, 2005}
-\begin{position}
-Executive responsible for fiscal operations of the society. 
-\end{position}
-
-\employer{\textbf{Carleton Nexus Project}}
-\title{Assistant Server Administrator }
-\location{Ottawa Canada}
-\dates{November, 2003 - June, 2005}
-\begin{position}
-Setup and maintenance of SQL, mail, ldap, and webservers.
-\end{position}
+% \section{\textsc{Volunteer Work}}
+% \begin{formatb}
+% 	\employer{l}\title{r}\\
+% 	\location{l}\dates{r}\\
+% 	\body\\
+% \end{formatb}
+%
+% \employer{\textbf{Carleton University}}
+% \title{Carleton University Senate Senator }
+% \location{Ottawa Canada}
+% \dates{June 30, 2005 - June 30, 2006}
+% \begin{position}
+% Senator representing the constituency of Science. Responsible for representing the needs of students as well as bringing student issues to the University Senate.
+% \end{position}
+%  
+% \employer{\textbf{Carleton Computer Science Society}}
+% \title{IT Administrator}
+% \location{Ottawa Canada}
+% \dates{June 30, 2005 - June 30, 2006}
+% \begin{position}
+% Responsible for all technology oriented facets of the organization, including web/db server administration, networking infrastructure, and web cms administration and upgrading. This was done first through a homebuilt CMS tool, and later using Drupal.
+% \end{position}
+%
+% \employer{\textbf{Carleton University}}
+% \title{NUG Representative}
+% \location{Ottawa Canada}
+% \dates{September 30, 2004 - June 30, 2006}
+% \begin{position}
+% Student representative for constituency of Computer Science.
+% \end{position}
+%
+% \employer{\textbf{Carleton Computer Science Society}}
+% \title{Financial Officer}
+% \location{Ottawa Canada}
+% \dates{June 30, 2004 - June 30, 2005}
+% \begin{position}
+% Executive responsible for fiscal operations of the society. 
+% \end{position}
+%
+% \employer{\textbf{Carleton Nexus Project}}
+% \title{Assistant Server Administrator }
+% \location{Ottawa Canada}
+% \dates{November, 2003 - June, 2005}
+% \begin{position}
+% Setup and maintenance of SQL, mail, ldap, and webservers.
+% \end{position}
 
 %%
 %% Note that we're redefining the formatting
