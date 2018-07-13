@@ -43,8 +43,8 @@
 \name{Oren Mazor}
 
 %this is right aligned
-\address{\#2 87 Stirling Street, Ottawa, Canada, K1Y 1P9}
-\address{(613) 255 - 5093 \ttfamily $<$oren.mazor at gmail dot com$>$}
+\address{\#9 Winnifred Avenue, Toronto, Ontario, Canada, M4M 2X2}
+\address{(613) 255 - 5093 \ttfamily $<$oren.mazor at protonmail com$>$}
 
 \begin{resume}
 
@@ -53,11 +53,12 @@
 %%
 
 \section{\textsc{Summary}}
-A creative Software Developer with a strong cross-technology skill-set. Interested in building expertise in application development for mobile devices, as well as working with modern web technologies as a back-end developer.
+A creative Software Developer with a strong cross-technology skill-set. Looking for opportunities to leverage my existing skills in Site-Reliability Engineering, Performance, and related Dev/Ops work.
 
 \section{\textsc{Education}}
 
 \textit{Bachelor of Computer Science}, Class of 2006. \\
+Concentration in Information Security \\
 Minor in Business \\
 Carleton University, Ottawa, Canada \\
 Thesis: \textit{''Practical Mitigation of Malicious Network Resource Consumers''} \\
@@ -75,25 +76,77 @@ Supervised by Dr. Anil Somayaji.
 
 \section{\textsc{Research Topics}}
 
-Network Security, Bioinformatics, Usability, and Ubiquitous Computing.
+Network Security, Internet of Things, Usability, and Ubiquitous Computing.
 
 \section{\textsc{Qualifications}}
 
-\emph{Programming Languages}: C, C$++$, C\#, Objective-C.
+\emph{Programming Languages}: C, C\#, Golang.
 
-\emph{Scripting:} PHP, Perl, Python, JQuery.
+\emph{Scripting:} Ruby, Perl, Python, Various Javascript Toolkits.
 
-\emph{Data Management}: PostgreSQL, MySQL, XML, JSON, RDF.
+\emph{Data Management}: HADOOP MR/Spark, PostgreSQL, MySQL, Redshift/RDS.
 
-\emph{Toolkits}: WiX, STL, Cocoa, Google App Engine, Django.
+\emph{Toolkits}: Chef, Apache Hadoop stack, Rails/Sinatra, Node.js, AWS/Heroku/Digital Ocean, Django.
 
-\emph{Tools}: Visual Studio 2003-2008, X-Code, VIM, Eclipse, Dreamweaver.
+\emph{Tools}: VIM, Git, Visual Studio 2003-2008.
 
 \emph{Software Engineering}: Agile/XP Development, Design Patterns.
 
-\emph{Technical Interests}: Coding Standards, Frameworks and Middleware, Dynamically Typed Languages.
+\emph{Technical Interests}: Containers, Managing Big-Data Clusters, Frameworks and Middleware, Dynamically Typed Languages.
 
-\section{\textsc{Professional Experience}}
+\section{\textsc{Primary Professional Experience}}
+
+\employer{\textbf{RaCharge Payments}}
+\title{Senior Software Developer}
+        \location{Santa Monica, California (Remote)}
+\dates{2016 - 2018}
+\begin{position}
+\begin{itemize}
+\item Introduced and managed CI/CD processes.
+\item Worked on dockerizing the codebase and migrated the infrastructure from an adhoc deploy supervisorctl/runit method to a dockerized cluster managed.
+\item Implemented SRE principles to monitor security and performance on a variety of services provided to merchants and customers using modern industry stdards (statsd, newrelic, pagerduty).
+\item Worked on BFCM preparations for checkouts, a variety of strategies for improving throughput and managing complex business logic flows that are externals bound (e.g. stripe, avalara, ups, shopify).
+\item Implemented a backgrounding mechanism based on Python's RQ (with healthy ripping off of Resque/Sidekiq mechanisms, as RQ is relatively barebones). Added exponential and a variety of LRU backoff strategies to accomodate external resource throttles.
+\end{itemize}
+\end{position}
+
+\employer{\textbf{Rarelogic}}
+\title{Senior Software Developer}
+\location{Ottawa Canada}
+\dates{2015-2016}
+\begin{position}
+\begin{itemize}
+\item Applied SRE and CI/CD mechanisms to aid in modernizing a prototype codebase in preparation for wide access by customers.
+\item Converted a complex microservices architecture from sorta-node.js to rails, added test coverage and proper code release mechanisms.
+\item Stabilized and modernized the database architecture from a customer in-memory redis based to one backed by postgresql and cassandra.
+\item Lived with the horror that is MTA bulk emailing IP reputation management.
+\end{itemize}
+\end{position}
+
+\employer{\textbf{Shopify}}
+\title{Señor Software Developer}
+\location{Ottawa Canada}
+\dates{2012 - 2015}
+\begin{position}
+\begin{itemize}
+\item Shipped multiple products from MVP to Production Ready of new features, including Merchant Admin Console BI reporting tools, making use of data cubes, a custom golang lmdb analytics database, and a variety of real-time ETL stacks.
+\item Worked on the SRE team on flash sales and security infrastructure. Focus on preparation for Black-Friday/Cyber Monday flash sale load.
+\item Shipped the first revision of a performant multi-datacenter HTTP router using Lua and Nginx to replace HAproxy
+\item Helped migrate a large Hadoop Data Cluster from MR1 to MR2. Then prototyped and ran a migration for a 1000 job ETL scheduler. Worked on cluster performance, stability, hardware maintenance, and recoverability. 
+\item Set up, migrated, and administered a Tableau High-Availability cluster. 
+\end{itemize}
+\end{position}
+
+\employer{\textbf{Wildbit}}
+\title{Software Developer}
+\location{Ottawa Canada}
+\dates{2011 - 2012}
+\begin{position}
+\begin{itemize} 
+\item Ran DevOps for the Postmark stack, which included a variety of windows services, centos servers, and a stack of microservices to fulfill all tasks from searching, sending, MTA maintenance, and UI performance.
+\item Created and delivered a variety of features, including a migration from an admin dashboard powered by MongoDB to one powered by ElasticSearch and CouchDB. Part of this project required the creation of a custom MongoDB to ES replication strategy.
+\end{itemize}
+\end{position}
 
 \employer{\textbf{VDOlife}}
 \title{Web Software Developer}
@@ -217,34 +270,6 @@ Executive responsible for fiscal operations of the society.
 \begin{position}
 Setup and maintenance of SQL, mail, ldap, and webservers.
 \end{position}
-
-
-%%
-%% This section could also use more formatting, but looks ok, as is
-%%
-
-\section{\textsc{Personal Projects}}
-\begin{formatb}
-	\employer{l}\\
-	\body\\
-\end{formatb}
-
-\employer{\textbf{Kwidoo Audio Toolkit}}
-\begin{position}
-	A collection of audio processing and generation tools, written with Objective-c and Cocoa.
-\end{position}
-
-\employer{\textbf{Car PC}}
-\begin{position}
-	An intelligent processing module that will allow passive monitoring of car processes, as well as providing navigation aids and other in-car features, such as media.
-\end{position}
-
-\section{\textsc{Interests}}
-
-\begin{itemize}
-\item OS-X development; iPhone/Android; Maemo; Netbooks and UMPC development; Python; Data Structures; WebKit; Wireless Networking Architecture; 
-\item Geocaching; Automotive experimentation; Photography; Hiking; Ultimate disc;
-\end{itemize}
 
 %%
 %% Note that we're redefining the formatting
