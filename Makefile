@@ -4,5 +4,5 @@ DATE := $(shell date +"%Y-%m-%dT%H-%M-%S")
 
 resume:
 	texi2pdf orenmazor_resume.tex
-	mv orenmazor_resume.pdf orenmazor_resume_$(DATE)_$(SHA).pdf
+	cp orenmazor_resume.pdf orenmazor_resume_$(DATE)_$(SHA).pdf
 
