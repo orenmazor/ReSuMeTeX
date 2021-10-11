@@ -1,5 +1,6 @@
 SHA := $(shell git rev-parse --short HEAD)
 DATE := $(shell date +"%Y-%m-%dT%H-%M-%S")
+PATH := $(PATH):/Library/TeX/texbin/
 
 
 resume:
