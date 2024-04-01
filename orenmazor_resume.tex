@@ -43,7 +43,7 @@
 \name{Oren Mazor}
 
 %this is right aligned
-\address{\#2605-170 Bayview Avenue, Toronto, Ontario, Canada, M4M 2X2}
+\address{Toronto, Ontario, Canada}
 \address{(613) 899-5788 \ttfamily $<$oren.mazor at protonmail com$>$}
 
 \begin{resume}
@@ -53,7 +53,7 @@
 %%
 
 \section{\textsc{Summary}}
-A radically candid, creative software engineer with a strong cross-technology skill-set. Looking for opportunities to leverage my existing skills in Site-Reliability Engineering, Performance, and related Dev/Ops work. The goal is always to ship fantastic products that make people's lives better.
+A radically candid, creative software engineer with a strong cross-technology skill-set.\\\\Looking for opportunities to leverage my existing skills in Site-Reliability Engineering, Performant design, and related DevOps work.\\\\My goal is to ship fantastic products that make people's lives better.
 
 \section{\textsc{Education}}
 
@@ -76,7 +76,7 @@ Supervised by Dr. Anil Somayaji.
 
 \section{\textsc{Research Topics}}
 
-Network Security, Internet of Things, Privacy, Capacity Plannings.
+Observabilty, Incident Management, Network Security, Homelabs, Data Privacy, Capacity Planning.
 
 \section{\textsc{Online}}
 https://www.github.com/orenmazor\\
@@ -84,34 +84,41 @@ https://www.linkedin.com/in/orenmazor/
 
 \section{\textsc{Qualifications}}
 
-\emph{Programming Languages}: Golang, C.
+\emph{Preferred Programming Languages}: Golang, Python.
 
-\emph{Scripting:} Python, Perl, Ruby, Lua, Various Javascript Toolkits.
+\emph{Scripting:} Python, Perl, Ruby, Lua.
 
-\emph{Data Management}: PostgreSQL, MySQL, Redshift/HADOOP.
+\emph{Databases}: PostgreSQL, MySQL, Redshift/HADOOP.
 
-\emph{Toolkits}: Hashicorp stack (Terraform/Nomad/Vault), Apache Hadoop stack, Rails/Sinatra, Node.js, AWS/Heroku/Digital Ocean.
-
-\emph{Tools}: NeoVIM, Git, Visual Studio 2003-2008.
-
-\emph{Software Engineering Management}: Team Topologies and  Agile/XP Development, Design Patterns.
-
-\emph{Technical Interests}: Containers, Managing Big-Data Clusters, Frameworks and Middleware, Dynamically Typed Languages, Query Planners.
+\emph{Platforms}: Hashicorp stack (Terraform/Nomad), AWS (significant expertise), GCP, Digital Ocean.
 
 \section{\textsc{Primary Professional Experience}}
 
 \employer{\textbf{1Password}}
-\title{Senior DevOps Engineer}
+
+\title{Staff Production Engineer}
         \location{Toronto, Canada}
-\dates{2019 - Present}
+\dates{2022 - Present}
 \begin{position}
 \begin{itemize}
-\item Prototyped a data center migration off AWS and into a platform that I am NDA blocked from revealing. We determined this is a very bad idea.
-\item Built a PII preserving datalake on AWS Athena that ingests from a variety of data centers. The ETL pipeline was initially was built using hashicorp tools, but later migrated to AWS Batch for simplicity and cost savings.
-\item Built and staffed out a BI team on top of the datalake to provide business services via Looker for curated BI and Metabase for raw data access.
-\item Supported senior leadership directly to fullfill organization goals as a senior member of the infrastructure team.
+\item Led a team of production engineers in modernizing our observability infrastructure from disjoint tooling and into a uniform posture on Datadog. We encouraged the usage of scorecards, service catalog, and a variety of effort multiplying middleware to encourage tracing use.
+\item Published and prototyped RFD for a new Service-Oriented-Architecture platform built on top of K8s. This was a collaborative cross-engineering process, where I made sure to find a satisfying compromise for all teams. The end result is a product that can be easily onboarded by a team and provided automated CICD as well as observability with little to no need for K8s expertise. It was recently used as a CD target by all projects of a hackathon, as well as the basis of a linkerd strategy for uniform golden signals for deployed services.
+\item Managed and mentored SRE principles, golang engineering principles, and team topologies principles to my team as it matured into a team that provides enablement services to our engineering org.
+\item Provided technical leadership in site reliability engineering to a rapidly maturing engineering organization (from 50 to 500 engineers during my tenure).
 \end{itemize}
 \end{position}
+
+\title{Senior DevOps Engineer}
+        \location{Toronto, Canada}
+\dates{2019 - 2022}
+\begin{position}
+\begin{itemize}
+\item Prototyped a grey labelling approach of the cloud platform from AWS and into a private data center for our clients, moving our main workloads from virtual machines and into openshift.
+\item Built a PII preserving datalake on AWS Athena that ingests from a variety of global data centers using Pandas and AWS Batch. I built two parallel frontrooms, Metabase for engineers, and Looker for GTM teams.
+\item Built and staffed out a BI team on top of the datalake to provide business services to users.
+\end{itemize}
+\end{position}
+
 
 \employer{\textbf{Vium}}
 \title{Senior DevOps Engineer}
@@ -145,26 +152,26 @@ https://www.linkedin.com/in/orenmazor/
 \location{Ottawa Canada}
 \dates{2015-2016}
 \begin{position}
-\begin{itemize}
-\item Applied SRE and CI/CD mechanisms to aid in modernizing a prototype codebase in preparation for wide access by customers.
-\item Converted a complex microservices architecture from sorta-node.js to rails, added test coverage and proper code release mechanisms.
-\item Stabilized and modernized the database architecture from a customer in-memory redis based to one backed by postgresql and cassandra.
-\item Lived with the horror that is MTA bulk emailing IP reputation management.
-\end{itemize}
+%\begin{itemize}
+%\item Applied SRE and CI/CD mechanisms to aid in modernizing a prototype codebase in preparation for wide access by customers.
+%\item Converted a complex microservices architecture from sorta-node.js to rails, added test coverage and proper code release mechanisms.
+%\item Stabilized and modernized the database architecture from a customer in-memory redis based to one backed by postgresql and cassandra.
+%\item Lived with the horror that is MTA bulk emailing IP reputation management.
+%\end{itemize}
 \end{position}
 
 \employer{\textbf{Shopify}}
-\title{Señor Software Developer}
+\title{Site Reliability Engineer}
 \location{Ottawa Canada}
 \dates{2012 - 2015}
 \begin{position}
-\begin{itemize}
-\item Shipped multiple products from MVP to Production Ready of new features, including Merchant Admin Console BI reporting tools, making use of data cubes, a custom golang lmdb analytics database, and a variety of real-time ETL stacks.
-\item Worked on the SRE team on flash sales and security infrastructure. Focus on preparation for Black-Friday/Cyber Monday flash sale load.
-\item Shipped the first revision of a performant multi-datacenter HTTP router using Lua and Nginx to replace HAproxy
-\item Helped migrate a large Hadoop Data Cluster from MR1 to MR2. Then prototyped and ran a migration for a 1000 job ETL scheduler. Worked on cluster performance, stability, hardware maintenance, and recoverability. 
-\item Set up, migrated, and administered a Tableau High-Availability cluster. 
-\end{itemize}
+%\begin{itemize}
+%\item Shipped multiple products from MVP to Production Ready of new features, including Merchant Admin Console BI reporting tools, making use of data cubes, a custom golang lmdb analytics database, and a variety of real-time ETL stacks.
+%\item Worked on the SRE team on flash sales and security infrastructure. Focus on preparation for Black-Friday/Cyber Monday flash sale load.
+%\item Shipped the first revision of a performant multi-datacenter HTTP router using Lua and Nginx to replace HAproxy
+%\item Helped migrate a large Hadoop Data Cluster from MR1 to MR2. Then prototyped and ran a migration for a 1000 job ETL scheduler. Worked on cluster performance, stability, hardware maintenance, and recoverability. 
+%\item Set up, migrated, and administered a Tableau High-Availability cluster. 
+%\end{itemize}
 \end{position}
 
 \employer{\textbf{Wildbit}}
@@ -172,22 +179,10 @@ https://www.linkedin.com/in/orenmazor/
 \location{Ottawa Canada}
 \dates{2011 - 2012}
 \begin{position}
-\begin{itemize} 
-\item Ran DevOps for the Postmark stack, which included a variety of windows services, centos servers, and a stack of microservices to fulfill all tasks from searching, sending, MTA maintenance, and UI performance.
-\item Created and delivered a variety of features, including a migration from an admin dashboard powered by MongoDB to one powered by ElasticSearch and CouchDB. Part of this project required the creation of a custom MongoDB to ES replication strategy.
-\end{itemize}
-\end{position}
-
-\employer{\textbf{VDOlife}}
-\title{Web Software Developer}
-\location{Ottawa Canada}
-\dates{May 2009 - Present}
-\begin{position}
-\begin{itemize}
-\item Designed features for the VDO product line using javascript, CFML, php, and python.
-\item Took on the head architect role for at least one prototype product and produced a working sample on short notice.
-\item Administrated production Redhat and Ubuntu servers responsible for web and media streaming to the public.
-\end{itemize}
+%\begin{itemize} 
+%\item Ran DevOps for the Postmark stack, which included a variety of windows services, centos servers, and a stack of microservices to fulfill all tasks from searching, sending, MTA maintenance, and UI performance.
+%\item Created and delivered a variety of features, including a migration from an admin dashboard powered by MongoDB to one powered by ElasticSearch and CouchDB. Part of this project required the creation of a custom MongoDB to ES replication strategy.
+%\end{itemize}
 \end{position}
 
 \employer{\textbf{OneChip Photonics}}
@@ -195,22 +190,11 @@ https://www.linkedin.com/in/orenmazor/
 \location{Ottawa Canada}
 \dates{May 2009 - Present}
 \begin{position}
-\begin{itemize}
-\item Duties included advanced understanding of C\# coding standards, problem identification and solution, deployment strategies for libraries and applications (internal and customer facing). Also responsible for training test automation and electrical engineers in basic software design principles.
-\item Responsible for the creation and maintenance of several test automation software for photooptic devices, with a heavy focus on robotic validation of circuitry using computer vision algorithms.
-\item Designed an internally used extensive API for test automation libraries, test stations, GPIB device drivers, and a LINQ based ORM for manipulating test data results.
-\end{itemize}
-\end{position}
-
-\employer{\textbf{Self Employed}}
-\title{Web Software Developer}
-\location{Ottawa Canada}
-\dates{January 2009 - July 2009}
-\begin{position}
-\begin{itemize}
-\item Took on several projects using a variety of tools, such as Joomla, Wordpress, and django/python.
-\item Provided Joomla training, design, and maintenance to several teams and developers.
-\end{itemize}
+%\begin{itemize}
+%\item Duties included advanced understanding of C\# coding standards, problem identification and solution, deployment strategies for libraries and applications (internal and customer facing). Also responsible for training test automation and electrical engineers in basic software design principles.
+%\item Responsible for the creation and maintenance of several test automation software for photooptic devices, with a heavy focus on robotic validation of circuitry using computer vision algorithms.
+%\item Designed an internally used extensive API for test automation libraries, test stations, GPIB device drivers, and a LINQ based ORM for manipulating test data results.
+%\end{itemize}
 \end{position}
 
 \employer{\textbf{Macadamian Technologies}}
@@ -218,27 +202,27 @@ https://www.linkedin.com/in/orenmazor/
 \location{Ottawa Canada}
 \dates{June 2006 - January 2009}
 \begin{position}
-\begin{itemize}
-\item Worked in a team to design and deliver major features of embedded VOIP desktop and software phones, including Emergency dialing/routing, UI re-design, SMS messaging, and designing feature provisioning using SOAP.
-\item Developed plug-ins for a Microsoft Office tool, as well as developing and maintaining a variety of custom Windows installers using the WiX framework.
-\item Took on customer facing project leadership tasks in project administration, status reporting, workload division, and quality assurance communication in a six person globally distributed project.
-\item Advanced personal understanding of low level embedded systems written in C/C++, such as writing applications for the EFI Framework and VxWorks.
-\item Represented Macadamian in professional and recruiting events, as well as co-editing the corporate blog, and developing the competition monitoring, solution submission, and marking web application for the CS Games 2007 Programming competition (written in PHP with an open source AJAX toolkit).
-\item Created and ran internal training discussion groups (Barcamps) on topics ranging from iPhone/Android SDKs to Semantic Web technologies.
-\end{itemize}
+%\begin{itemize}
+%\item Worked in a team to design and deliver major features of embedded VOIP desktop and software phones, including Emergency dialing/routing, UI re-design, SMS messaging, and designing feature provisioning using SOAP.
+%\item Developed plug-ins for a Microsoft Office tool, as well as developing and maintaining a variety of custom Windows installers using the WiX framework.
+%\item Took on customer facing project leadership tasks in project administration, status reporting, workload division, and quality assurance communication in a six person globally distributed project.
+%\item Advanced personal understanding of low level embedded systems written in C/C++, such as writing applications for the EFI Framework and VxWorks.
+%\item Represented Macadamian in professional and recruiting events, as well as co-editing the corporate blog, and developing the competition monitoring, solution submission, and marking web application for the CS Games 2007 Programming competition (written in PHP with an open source AJAX toolkit).
+%\item Created and ran internal training discussion groups (Barcamps) on topics ranging from iPhone/Android SDKs to Semantic Web technologies.
+%\end{itemize}
 \end{position}
 
-\employer{\textbf{International Datacasting Corporation}}
-\title{Software Developer}
-\location{Ottawa Canada}
-\dates{June 2004 - June 2006}
-\begin{position}
-\begin{itemize}
-\item Implemented a customized ''heartbeat'' monitoring tool for a realtime satellite broadcasting headend network using C\# and a variety of win32 libraries.
-\item Developed an in-house used Wireshark (C++/GTK) visual plugin for debugging of the control protocol, previously done via notepad and a hex dump.
-\item Responsible for system maintenance of RedHat Linux and Windows enterprise platforms, and aiding in a variety of projects, from a video transmission tool written in VB, a real-time AJAX scheduling tool written in PHP, and in-depth work with a c/perl head-end satellite receiver management web application.
-\end{itemize}
-\end{position}
+%\employer{\textbf{International Datacasting Corporation}}
+%\title{Software Developer}
+%\location{Ottawa Canada}
+%\dates{June 2004 - June 2006}
+%\begin{position}
+%%\begin{itemize}
+%%\item Implemented a customized ''heartbeat'' monitoring tool for a realtime satellite broadcasting headend network using C\# and a variety of win32 libraries.
+%%\item Developed an in-house used Wireshark (C++/GTK) visual plugin for debugging of the control protocol, previously done via notepad and a hex dump.
+%%\item Responsible for system maintenance of RedHat Linux and Windows enterprise platforms, and aiding in a variety of projects, from a video transmission tool written in VB, a real-time AJAX scheduling tool written in PHP, and in-depth work with a c/perl head-end satellite receiver management web application.
+%%\end{itemize}
+%\end{position}
 
 %%
 %% We use the same formatting for projects as for work experience
